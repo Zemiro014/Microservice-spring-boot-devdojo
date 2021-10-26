@@ -1,6 +1,0 @@
-package academy.devdojo.youtube.course.model;
-
-
-public class Course implements AbstractEntity{
-private Long id;
-}
