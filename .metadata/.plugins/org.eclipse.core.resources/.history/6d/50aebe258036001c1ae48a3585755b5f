@@ -1,0 +1,13 @@
+package academy.devdojo.youtube.course.endpoint.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import academy.devdojo.youtube.course.repositories.CourseRepository;
+import lombok.RequiredArgsConstructor;
+
+@Service
+public class CourseService {
+	@Autowired
+	private final CourseRepository courseRepository;
+}

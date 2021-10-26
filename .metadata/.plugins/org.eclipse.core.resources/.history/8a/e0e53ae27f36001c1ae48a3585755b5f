@@ -1,0 +1,14 @@
+package academy.devdojo.youtube.course.repositories;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.stereotype.Service;
+
+import academy.devdojo.youtube.course.model.Course;
+import lombok.RequiredArgsConstructor;
+
+public interface CourseRepository extends PagingAndSortingRepository<Course, Long>{
+
+	@Autowired
+	private CourseRepository courseRepository;
+}
