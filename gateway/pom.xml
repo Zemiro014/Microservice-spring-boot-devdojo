@@ -9,26 +9,32 @@
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
 	</parent>
-
-	<artifactId>course</artifactId>
+	
+	<artifactId>gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>course</name>
-	<description>Spring Boot Micro-services By DevDojo</description>
-
+	<name>gateway</name>
+	<description>DevDojo&apos;s Gateway</description>
 	<properties>
 		<java.version>11</java.version>
+		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 	</properties>
 
 	<dependencies>
+	
 		<dependency>
-			<groupId>academy.devdojo.youtube</groupId>
-			<artifactId>core</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
-		<finalName>course</finalName>
+		<finalName>gateway</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -48,4 +54,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
